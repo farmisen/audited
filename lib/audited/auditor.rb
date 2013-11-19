@@ -199,7 +199,7 @@ module Audited
       end
 
       def audit_update
-        unless (changes = audited_changes).empty? && audit_comment.blank?
+        #unless (changes = audited_changes).empty? && audit_comment.blank?
           write_audit(:action => 'update', :audited_changes => changes,
                       :comment => audit_comment)
         end
